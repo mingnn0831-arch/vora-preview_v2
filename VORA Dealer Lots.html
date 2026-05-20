@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>VORA · 매매 단지</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" as="style" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="listings.css" />
+<link rel="stylesheet" href="subpages.css" />
+</head>
+<body class="lots" data-screen-label="Dealer lots">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3-3"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-7.5-7-12a7 7 0 1 1 14 0c0 4.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+    <symbol id="i-pin-fill" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22s7-7.5 7-12a7 7 0 1 0-14 0c0 4.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5" fill="#fff"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l2-5a3 3 0 0 1 3-2h8a3 3 0 0 1 3 2l2 5"/><path d="M3 13h18v5a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-1H7v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><circle cx="7" cy="16" r="1"/><circle cx="17" cy="16" r="1"/></symbol>
+    <symbol id="i-shop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18l-1.5 11a2 2 0 0 1-2 1.7H6.5a2 2 0 0 1-2-1.7L3 9z"/><path d="M3 9V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3"/><path d="M9 13a3 3 0 0 0 6 0"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7H6.5a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+  </defs>
+</svg>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="vora-mark" viewBox="0 0 174 33">
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M65.1589 0.366699C73.6026 0.366699 80.4476 7.26152 80.4476 15.7667V17.2334C80.4476 25.7386 73.6026 32.6334 65.1589 32.6334H56.0585C47.6148 32.6334 40.7698 25.7386 40.7698 17.2334V15.7667C40.7698 7.26151 47.6148 0.366699 56.0585 0.366699H65.1589ZM56.0585 7.70003C51.6356 7.70003 48.0501 11.3116 48.0501 15.7667V17.2334C48.0501 21.6885 51.6356 25.3 56.0585 25.3H65.1589C69.5818 25.3 73.1673 21.6885 73.1673 17.2334V15.7667C73.1673 11.3116 69.5818 7.70003 65.1589 7.70003H56.0585Z"/>
+    <path fill="currentColor" d="M153.677 0.366699L133.958 32.6667H142.505L153.677 14.367L164.85 32.6667H173.396L153.677 0.366699Z"/>
+    <path fill="currentColor" d="M115.757 0.366699C121.99 0.366699 127.042 5.45573 127.042 11.7334C127.042 16.8883 123.635 21.2408 118.966 22.6331L126.804 32.6334H117.528L110.056 23.1H94.6443V32.6334H87.364V15.7667H115.757C117.969 15.7667 119.762 13.9609 119.762 11.7334C119.762 9.50582 117.969 7.70003 115.757 7.70003H87.364V0.366699H115.757Z"/>
+    <path fill="currentColor" d="M20.0831 18.6664L24.9874 10.6334H33.5343L20.0831 32.6667L0.364014 0.366699H8.91094L20.0831 18.6664Z"/>
+    <path fill="#35B0FC" d="M35.9968 6.60003H27.4498L31.2553 0.366699H39.8022L35.9968 6.60003Z"/>
+  </symbol>
+</svg>
+
+<!-- ── TOP NAV ── -->
+<header class="topnav">
+  <div class="topnav__inner">
+    <div class="topnav__left">
+      <a href="VORA Home.html"><svg viewBox="0 0 174 33" width="75" height="14" style="color:var(--vora-ink-90)"><use href="#vora-mark"/></svg></a>
+      <nav class="topnav__nav">
+        <a href="VORA Home.html">홈</a>
+        <a href="VORA Listings Screen.html">중고차 검색</a>
+        <a href="VORA Dealers.html">딜러 찾기</a>
+        <a href="VORA Dealer Lots.html" class="is-active">매매 단지</a>
+        <a href="#">시세</a>
+        <a href="#">가이드</a>
+        <a href="#">커뮤니티</a>
+      </nav>
+    </div>
+    <div class="topnav__right">
+      <label class="input">
+        <svg class="ic"><use href="#i-search"/></svg>
+        <input type="text" placeholder="도시, 단지명으로 검색" />
+      </label>
+      <button class="btn btn--s btn--outline-ink">로그인 / 회원가입</button>
+    </div>
+  </div>
+</header>
+
+<div class="subpage">
+
+  <!-- PAGE HEAD -->
+  <div class="subhead">
+    <div>
+      <div class="crumbs">홈 <span>›</span> <b>매매 단지</b></div>
+      <h1 class="subhead__title">베트남 전역 <em>매매 단지</em></h1>
+      <div class="subhead__count"><b>42</b>개 단지 · 등록 딜러 <b>1,284</b>명 · 보유 매물 <b>12,840</b>대</div>
+    </div>
+    <div class="city-tabs">
+      <button class="chip chip--on">전체</button>
+      <button class="chip">하노이</button>
+      <button class="chip">호치민</button>
+      <button class="chip">다낭</button>
+      <button class="chip">하이퐁</button>
+      <button class="chip">냐짱</button>
+    </div>
+  </div>
+
+  <!-- ── HERO MAP MODULE ── -->
+  <div class="lot-hero">
+    <div class="lot-hero__copy">
+      <div class="lot-hero__eyebrow">VORA Auto Marketplace</div>
+      <h2 class="lot-hero__title">직접 보고, 비교하고,<br/>한 곳에서 거래하세요</h2>
+      <p class="lot-hero__lede">하노이부터 호치민까지, 전국 42개 매매 단지에서 12,000여 대의 검수 완료 매물을 한 번에 만나보세요.</p>
+      <div class="lot-hero__stats">
+        <div><b>42</b>매매 단지</div>
+        <div><b>1,284</b>등록 딜러</div>
+        <div><b>12.8K+</b>보유 매물</div>
+      </div>
+    </div>
+
+    <!-- Vietnam-style scattered pins -->
+    <div class="lot-pin lot-pin--active" style="right:30%; top:30%">
+      <svg viewBox="0 0 24 24" width="32" height="32"><use href="#i-pin-fill"/></svg>
+      <label>까우자이 본점 · 하노이</label>
+    </div>
+    <div class="lot-pin" style="right:34%; top:46%">
+      <svg viewBox="0 0 24 24" width="24" height="24"><use href="#i-pin-fill"/></svg>
+      <label>하이퐁</label>
+    </div>
+    <div class="lot-pin" style="right:24%; top:56%">
+      <svg viewBox="0 0 24 24" width="24" height="24"><use href="#i-pin-fill"/></svg>
+      <label>다낭</label>
+    </div>
+    <div class="lot-pin" style="right:18%; top:72%">
+      <svg viewBox="0 0 24 24" width="24" height="24"><use href="#i-pin-fill"/></svg>
+      <label>냐짱</label>
+    </div>
+    <div class="lot-pin" style="right:14%; top:84%">
+      <svg viewBox="0 0 24 24" width="24" height="24"><use href="#i-pin-fill"/></svg>
+      <label>호치민</label>
+    </div>
+  </div>
+
+  <!-- ── FEATURED LOT ── -->
+  <article class="lot-featured">
+    <div class="lot-featured__img">
+      <span class="badge badge--brand">VORA 인증 · 본점</span>
+    </div>
+    <div class="lot-featured__body">
+      <div class="lot-featured__eyebrow">FEATURED · 하노이</div>
+      <h3 class="lot-featured__title">까우자이 VORA Auto Marketplace</h3>
+      <div class="lot-featured__meta">
+        <div class="row">
+          <svg class="ic"><use href="#i-pin"/></svg>
+          <div><b>위치</b>하노이 까우자이, Phạm Hùng Street</div>
+        </div>
+        <div class="row">
+          <svg class="ic"><use href="#i-clock"/></svg>
+          <div><b>운영시간</b>09:00 – 19:00 · 연중무휴</div>
+        </div>
+        <div class="row">
+          <svg class="ic"><use href="#i-users"/></svg>
+          <div><b>입점 딜러</b>184명 · VORA 인증 92명</div>
+        </div>
+        <div class="row">
+          <svg class="ic"><use href="#i-car"/></svg>
+          <div><b>보유 매물</b>2,148대 · 매주 신차 480대</div>
+        </div>
+      </div>
+      <div class="lot-featured__actions">
+        <button class="btn">단지 둘러보기 <svg class="ic"><use href="#i-arrow-right"/></svg></button>
+        <button class="btn btn--outline-ink"><svg class="ic"><use href="#i-route"/></svg> 길찾기</button>
+        <button class="btn btn--outline-ink"><svg class="ic"><use href="#i-phone"/></svg> +84 24 1234</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- ── LOT GRID ── -->
+  <div class="subhead" style="border:0; padding:0; margin-bottom:20px; align-items:flex-end;">
+    <h2 style="font-size:22px; font-weight:700; letter-spacing:-1px; color:var(--vora-ink-100); margin:0">전체 매매 단지</h2>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <button class="sort">평점 높은순 <svg class="ic"><use href="#i-chevron"/></svg></button>
+      <button class="btn btn--s btn--outline-ink"><svg class="ic"><use href="#i-bell"/></svg>&nbsp;알림 받기</button>
+    </div>
+  </div>
+
+  <div class="lot-grid">
+
+    <!-- Lot 1 -->
+    <article class="lot-card">
+      <div class="lot-card__img">
+        <span class="badge badge--brand">VORA 인증</span>
+        <span class="dist">2.4 km</span>
+      </div>
+      <div class="lot-card__body">
+        <div class="lot-card__city">하노이</div>
+        <h3 class="lot-card__name">동다 Auto Park</h3>
+        <div class="lot-card__addr"><svg class="ic" style="width:12px;height:12px;color:var(--vora-ink-40)"><use href="#i-pin"/></svg> Lê Văn Lương, 동다</div>
+        <div class="lot-card__stats">
+          <div class="lot-card__stat"><label>딜러</label><strong>62<span class="unit">명</span></strong></div>
+          <div class="lot-card__stat"><label>매물</label><strong>820<span class="unit">대</span></strong></div>
+          <div class="lot-card__stat"><label>평점</label><strong>4.8</strong></div>
+        </div>
+        <div class="lot-card__hours"><span class="open">영업중</span> · 09:00 – 19:00</div>
+      </div>
+    </article>
+
+    <!-- Lot 2 -->
+    <article class="lot-card">
+      <div class="lot-card__img">
+        <span class="badge badge--hot">인기</span>
+        <span class="dist">5.8 km</span>
+      </div>
+      <div class="lot-card__body">
+        <div class="lot-card__city">하노이</div>
+        <h3 class="lot-card__name">롱비엔 Aeon Mall Lot</h3>
+        <div class="lot-card__addr"><svg class="ic" style="width:12px;height:12px;color:var(--vora-ink-40)"><use href="#i-pin"/></svg> Long Biên, Aeon Mall 인근</div>
+        <div class="lot-card__stats">
+          <div class="lot-card__stat"><label>딜러</label><strong>48<span class="unit">명</span></strong></div>
+          <div class="lot-card__stat"><label>매물</label><strong>540<span class="unit">대</span></strong></div>
+          <div class="lot-card__stat"><label>평점</label><strong>4.7</strong></div>
+        </div>
+        <div class="lot-card__hours"><span class="open">영업중</span> · 08:30 – 20:00</div>
+      </div>
+    </article>
+
+    <!-- Lot 3 -->
+    <article class="lot-card">
+      <div class="lot-card__img">
+        <span class="badge badge--brand">VORA 인증</span>
+        <span class="dist">호치민</span>
+      </div>
+      <div class="lot-card__body">
+        <div class="lot-card__city">호치민</div>
+        <h3 class="lot-card__name">탄빈 중고차 매매 단지</h3>
+        <div class="lot-card__addr"><svg class="ic" style="width:12px;height:12px;color:var(--vora-ink-40)"><use href="#i-pin"/></svg> Tân Bình, Phan Đình Phùng</div>
+        <div class="lot-card__stats">
+          <div class="lot-card__stat"><label>딜러</label><strong>156<span class="unit">명</span></strong></div>
+          <div class="lot-card__stat"><label>매물</label><strong>1,820<span class="unit">대</span></strong></div>
+          <div class="lot-card__stat"><label>평점</label><strong>4.9</strong></div>
+        </div>
+        <div class="lot-card__hours"><span class="open">영업중</span> · 09:00 – 21:00</div>
+      </div>
+    </article>
+
+    <!-- Lot 4 -->
+    <article class="lot-card">
+      <div class="lot-card__img">
+        <span class="badge badge--new">신규</span>
+        <span class="dist">다낭</span>
+      </div>
+      <div class="lot-card__body">
+        <div class="lot-card__city">다낭</div>
+        <h3 class="lot-card__name">하이쩌우 Marketplace</h3>
+        <div class="lot-card__addr"><svg class="ic" style="width:12px;height:12px;color:var(--vora-ink-40)"><use href="#i-pin"/></svg> Hải Châu, Nguyễn Văn Linh</div>
+        <div class="lot-card__stats">
+          <div class="lot-card__stat"><label>딜러</label><strong>34<span class="unit">명</span></strong></div>
+          <div class="lot-card__stat"><label>매물</label><strong>380<span class="unit">대</span></strong></div>
+          <div class="lot-card__stat"><label>평점</label><strong>4.6</strong></div>
+        </div>
+        <div class="lot-card__hours"><span class="open">영업중</span> · 09:00 – 18:30</div>
+      </div>
+    </article>
+
+    <!-- Lot 5 -->
+    <article class="lot-card">
+      <div class="lot-card__img">
+        <span class="badge badge--cert">365 검수</span>
+        <span class="dist">하이퐁</span>
+      </div>
+      <div class="lot-card__body">
+        <div class="lot-card__city">하이퐁</div>
+        <h3 class="lot-card__name">레찬 자동차 단지</h3>
+        <div class="lot-card__addr"><svg class="ic" style="width:12px;height:12px;color:var(--vora-ink-40)"><use href="#i-pin"/></svg> Lê Chân, Tô Hiệu</div>
+        <div class="lot-card__stats">
+          <div class="lot-card__stat"><label>딜러</label><strong>28<span class="unit">명</span></strong></div>
+          <div class="lot-card__stat"><label>매물</label><strong>310<span class="unit">대</span></strong></div>
+          <div class="lot-card__stat"><label>평점</label><strong>4.5</strong></div>
+        </div>
+        <div class="lot-card__hours">
+          <span style="color:var(--vora-ink-40); font-weight:700">영업 종료</span> · 09:00 – 18:00
+        </div>
+      </div>
+    </article>
+
+    <!-- Lot 6 -->
+    <article class="lot-card">
+      <div class="lot-card__img">
+        <span class="badge badge--brand">VORA 인증</span>
+        <span class="dist">호치민</span>
+      </div>
+      <div class="lot-card__body">
+        <div class="lot-card__city">호치민</div>
+        <h3 class="lot-card__name">2군 빈쭝 Auto Plaza</h3>
+        <div class="lot-card__addr"><svg class="ic" style="width:12px;height:12px;color:var(--vora-ink-40)"><use href="#i-pin"/></svg> Quận 2, Mai Chí Thọ</div>
+        <div class="lot-card__stats">
+          <div class="lot-card__stat"><label>딜러</label><strong>92<span class="unit">명</span></strong></div>
+          <div class="lot-card__stat"><label>매물</label><strong>1,140<span class="unit">대</span></strong></div>
+          <div class="lot-card__stat"><label>평점</label><strong>4.8</strong></div>
+        </div>
+        <div class="lot-card__hours"><span class="open">영업중</span> · 08:00 – 20:00</div>
+      </div>
+    </article>
+
+    <!-- Lot 7 -->
+    <article class="lot-card">
+      <div class="lot-card__img">
+        <span class="badge badge--brand">VORA 인증</span>
+        <span class="dist">하노이</span>
+      </div>
+      <div class="lot-card__body">
+        <div class="lot-card__city">하노이</div>
+        <h3 class="lot-card__name">하동 중고차 단지</h3>
+        <div class="lot-card__addr"><svg class="ic" style="width:12px;height:12px;color:var(--vora-ink-40)"><use href="#i-pin"/></svg> Hà Đông, Tô Hiệu</div>
+        <div class="lot-card__stats">
+          <div class="lot-card__stat"><label>딜러</label><strong>52<span class="unit">명</span></strong></div>
+          <div class="lot-card__stat"><label>매물</label><strong>620<span class="unit">대</span></strong></div>
+          <div class="lot-card__stat"><label>평점</label><strong>4.6</strong></div>
+        </div>
+        <div class="lot-card__hours"><span class="open">영업중</span> · 09:00 – 19:00</div>
+      </div>
+    </article>
+
+    <!-- Lot 8 -->
+    <article class="lot-card">
+      <div class="lot-card__img">
+        <span class="badge badge--hot">인기</span>
+        <span class="dist">냐짱</span>
+      </div>
+      <div class="lot-card__body">
+        <div class="lot-card__city">냐짱</div>
+        <h3 class="lot-card__name">냐짱 Beach Auto Lot</h3>
+        <div class="lot-card__addr"><svg class="ic" style="width:12px;height:12px;color:var(--vora-ink-40)"><use href="#i-pin"/></svg> Nha Trang, Trần Phú</div>
+        <div class="lot-card__stats">
+          <div class="lot-card__stat"><label>딜러</label><strong>24<span class="unit">명</span></strong></div>
+          <div class="lot-card__stat"><label>매물</label><strong>280<span class="unit">대</span></strong></div>
+          <div class="lot-card__stat"><label>평점</label><strong>4.7</strong></div>
+        </div>
+        <div class="lot-card__hours"><span class="open">영업중</span> · 09:00 – 19:00</div>
+      </div>
+    </article>
+
+    <!-- Lot 9 -->
+    <article class="lot-card">
+      <div class="lot-card__img">
+        <span class="badge badge--cert">365 검수</span>
+        <span class="dist">호치민</span>
+      </div>
+      <div class="lot-card__body">
+        <div class="lot-card__city">호치민</div>
+        <h3 class="lot-card__name">고밥 중고차 매매단지</h3>
+        <div class="lot-card__addr"><svg class="ic" style="width:12px;height:12px;color:var(--vora-ink-40)"><use href="#i-pin"/></svg> Gò Vấp, Quang Trung</div>
+        <div class="lot-card__stats">
+          <div class="lot-card__stat"><label>딜러</label><strong>74<span class="unit">명</span></strong></div>
+          <div class="lot-card__stat"><label>매물</label><strong>880<span class="unit">대</span></strong></div>
+          <div class="lot-card__stat"><label>평점</label><strong>4.7</strong></div>
+        </div>
+        <div class="lot-card__hours"><span class="open">영업중</span> · 09:00 – 20:00</div>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- Pagination -->
+  <div class="pager">
+    <button disabled>‹</button>
+    <button class="is-on">1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+    <button>›</button>
+  </div>
+
+</div>
+
+</body>
+</html>

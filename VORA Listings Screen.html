@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>VORA · 중고차 매물 검색</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" as="style" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="listings.css" />
+</head>
+<body class="listings">
+
+<!-- ── Icon library (shared with style guide) ── -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3-3"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M6 12h12M10 18h4"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  </defs>
+</svg>
+
+<!-- ── VORA wordmark ── -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="vora-mark" viewBox="0 0 174 33">
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M65.1589 0.366699C73.6026 0.366699 80.4476 7.26152 80.4476 15.7667V17.2334C80.4476 25.7386 73.6026 32.6334 65.1589 32.6334H56.0585C47.6148 32.6334 40.7698 25.7386 40.7698 17.2334V15.7667C40.7698 7.26151 47.6148 0.366699 56.0585 0.366699H65.1589ZM56.0585 7.70003C51.6356 7.70003 48.0501 11.3116 48.0501 15.7667V17.2334C48.0501 21.6885 51.6356 25.3 56.0585 25.3H65.1589C69.5818 25.3 73.1673 21.6885 73.1673 17.2334V15.7667C73.1673 11.3116 69.5818 7.70003 65.1589 7.70003H56.0585Z"/>
+    <path fill="currentColor" d="M153.677 0.366699L133.958 32.6667H142.505L153.677 14.367L164.85 32.6667H173.396L153.677 0.366699Z"/>
+    <path fill="currentColor" d="M115.757 0.366699C121.99 0.366699 127.042 5.45573 127.042 11.7334C127.042 16.8883 123.635 21.2408 118.966 22.6331L126.804 32.6334H117.528L110.056 23.1H94.6443V32.6334H87.364V15.7667H115.757C117.969 15.7667 119.762 13.9609 119.762 11.7334C119.762 9.50582 117.969 7.70003 115.757 7.70003H87.364V0.366699H115.757Z"/>
+    <path fill="currentColor" d="M20.0831 18.6664L24.9874 10.6334H33.5343L20.0831 32.6667L0.364014 0.366699H8.91094L20.0831 18.6664Z"/>
+    <path fill="#35B0FC" d="M35.9968 6.60003H27.4498L31.2553 0.366699H39.8022L35.9968 6.60003Z"/>
+  </symbol>
+</svg>
+
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="listings-app.jsx"></script>
+
+</body>
+</html>

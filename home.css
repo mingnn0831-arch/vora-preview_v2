@@ -1,0 +1,693 @@
+/* VORA Home — full main page recreated from figma design system */
+
+body.home { background: #FFFFFF; margin: 0; }
+
+/* ── Top nav (overlay on hero, white text) ── */
+.h-nav {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  z-index: 20;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.h-nav__inner {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.h-nav__left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.h-nav__menu {
+  display: flex;
+  gap: 28px;
+}
+.h-nav__menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  opacity: 0.92;
+}
+.h-nav__menu a:hover { opacity: 1; }
+.h-nav__menu a.is-active { font-weight: 700; opacity: 1; }
+.h-nav__right { display: flex; align-items: center; gap: 10px; }
+.h-nav .input--ghost { width: 320px; }
+
+/* ── HERO ── */
+.h-hero {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  color: #fff;
+  background: #1a2030;
+}
+.h-hero__bg {
+  position: absolute;
+  inset: -140px 0 0 0;
+  background-image: url('assets/hero.png');
+  background-size: cover;
+  background-position: center;
+}
+.h-hero__dim {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+.h-hero__content {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.h-hero__eyebrow {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  color: var(--vora-sky-tint);
+  margin-bottom: 16px;
+}
+.h-hero__title {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  margin: 0 0 16px;
+  color: #fff;
+}
+.h-hero__lede {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #fff;
+  margin: 0 0 24px;
+  max-width: 600px;
+}
+.h-hero__cta {
+  display: flex;
+  gap: 12px;
+}
+
+/* ── STATS strip (overlapping) ── */
+.h-stats {
+  position: relative;
+  margin-top: -78px;
+  z-index: 5;
+}
+.h-stats__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.h-stats__card {
+  background: #FEFEFE;
+  border-radius: var(--vora-r-lg);
+  box-shadow: 0 0 8px rgba(0,0,0,0.10);
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+}
+.h-stat__icon {
+  width: 32px; height: 32px;
+  border-radius: 8px;
+  background: var(--vora-sky-tint);
+  color: var(--vora-primary);
+  display: grid;
+  place-items: center;
+  margin-bottom: 10px;
+}
+.h-stat__label {
+  font-size: 12px;
+  color: var(--vora-ink-60);
+  font-weight: 500;
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+.h-stat__value {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--vora-ink-100);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.h-stat__value .unit { font-size: 16px; font-weight: 700; color: var(--vora-ink-80); margin-left: 2px; }
+.h-stat__note {
+  font-size: 11px;
+  color: var(--vora-ink-40);
+  font-weight: 500;
+}
+
+/* ── Generic section frames ── */
+.h-section {
+  width: 100%;
+  padding: 80px 0;
+}
+.h-section--soft { background: var(--vora-bg-soft); }
+.h-section--blue { background: var(--vora-bg-blue); }
+.h-section--dark {
+  background-image: linear-gradient(rgba(22,26,56,0.85), rgba(22,26,56,0.85)), url('assets/dealer-lot.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.h-section__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.h-section__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.h-section__head--centered {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+.h-eyebrow {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--vora-sky);
+  margin-bottom: 12px;
+  display: block;
+}
+.h-eyebrow--deep { color: var(--vora-primary-deep); }
+.h-eyebrow--light { color: var(--vora-sky-soft); }
+.h-title {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  color: var(--vora-ink-100);
+  margin: 0;
+}
+.h-title--small { font-size: 30px; }
+.h-title--light { color: #F5F6F8; }
+.h-lede {
+  font-size: 16px;
+  color: var(--vora-ink-80);
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  max-width: 560px;
+  margin: 12px 0 0;
+}
+.h-lede--center { text-align: center; max-width: 560px; }
+.h-more {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--vora-ink-80);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+.h-more:hover { color: var(--vora-primary); }
+
+/* ── BRAND SEARCH section ── */
+.h-brand-search {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.h-brand-search__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.h-brand-search__chips {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.h-brand-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+
+/* ── LISTINGS section ── */
+.h-listings-section { background: #fff; padding: 70px 0; }
+.h-listings-block + .h-listings-block { margin-top: 50px; }
+.h-listings-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 13px;
+}
+.h-listings-grid .listing { width: 100%; height: 340px; }
+.h-listings-pager {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 24px;
+}
+.h-listings-pager span {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--vora-line-strong);
+}
+.h-listings-pager span.is-on { background: var(--vora-primary); width: 18px; border-radius: 3px; }
+
+/* small card variant (for "new" listings 6-up smaller) */
+.h-listings-grid--6 {
+  grid-template-columns: repeat(6, 1fr);
+  gap: 11px;
+}
+.h-listings-grid--6 .listing { height: 236px; }
+.h-listings-grid--6 .listing__name { font-size: 14px; }
+.h-listings-grid--6 .listing__price { font-size: 14px; }
+.h-listings-grid--6 .listing__price .unit { font-size: 11px; }
+.h-listings-grid--6 .listing__trim { font-size: 11px; }
+.h-listings-grid--6 .listing__meta { font-size: 11px; }
+.h-listings-grid--6 .listing__body { gap: 4px; inset: auto 12px 12px 12px; }
+
+/* ── PRICE CHECK section ── */
+.h-price-cards { display: flex; flex-direction: column; gap: 24px; max-width: 1064px; margin: 24px auto 0; }
+.h-price-top5 .rowcard {
+  display: grid;
+  grid-template-columns: auto 93px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+}
+.h-price-top5 .rowcard__price-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+.h-price-card {
+  background: #fff;
+  border: 1px solid var(--vora-line-warm);
+  border-radius: var(--vora-r-lg);
+  padding: 24px 32px;
+}
+.h-price-card__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.h-price-card__title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--vora-ink-80);
+}
+.h-price-card__note {
+  font-size: 13px;
+  color: var(--vora-ink-60);
+  letter-spacing: -0.01em;
+}
+.h-price-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr auto;
+  gap: 8px;
+}
+.h-price-form .input {
+  height: 43px;
+  background: #fff;
+  border: 1px solid var(--vora-line-strong);
+  font-size: 14px;
+  font-weight: 500;
+}
+.h-price-form .btn {
+  height: 43px;
+  white-space: nowrap;
+}
+
+.h-price-detail {
+  background: #fff;
+  border: 1px solid var(--vora-line-warm);
+  border-radius: var(--vora-r-lg);
+  padding: 24px 32px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+  gap: 32px;
+}
+.h-price-detail > * { min-width: 0; }
+.h-price-detail__left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-right: 32px;
+  border-right: 1px solid var(--vora-line-strong);
+  min-width: 0;
+}
+.h-price-section__title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--vora-ink-80);
+  margin-bottom: 12px;
+}
+.h-price-section__subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--vora-ink-80);
+  margin: 8px 0 12px;
+}
+.h-price-summary {
+  background: var(--vora-bg-tint);
+  border-radius: 8px;
+  padding: 20px;
+}
+.h-price-summary__label {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--vora-ink-60);
+  margin-bottom: 4px;
+}
+.h-price-summary__value {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--vora-ink-100);
+  line-height: 1.2;
+}
+.h-price-summary__value .unit {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--vora-ink-80);
+  margin-left: 4px;
+}
+.h-price-summary__delta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--vora-ink-60);
+}
+.h-price-summary__delta .badge--rise { font-size: 11px; padding: 2px 6px; }
+
+.h-price-top5 { display: flex; flex-direction: column; gap: 12px; }
+.h-price-top5 .rowcard { background: #fff; }
+.h-price-top5 .rowcard:hover { border-color: var(--vora-primary); }
+
+/* ── DEALER LOT section ── */
+.h-dealer {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 40px;
+  min-height: 329px;
+}
+.h-dealer__copy {
+  width: 313px;
+  flex: 0 0 313px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.h-dealer__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 15px;
+  color: var(--vora-ink-30);
+  line-height: 1.6;
+}
+.h-dealer__meta div { display: flex; align-items: center; gap: 8px; }
+.h-dealer__meta .ic { color: var(--vora-sky-soft); }
+.h-dealer__map {
+  width: 634px;
+  flex: 0 1 634px;
+  height: 329px;
+  background: #E8EEF2;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+.h-dealer__map::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(110deg, rgba(34,118,219,0.05), rgba(52,177,227,0.10)),
+    radial-gradient(circle at 60% 40%, rgba(34,118,219,0.20), transparent 50%),
+    repeating-linear-gradient(0deg, rgba(0,0,0,0.04) 0 1px, transparent 1px 80px),
+    repeating-linear-gradient(90deg, rgba(0,0,0,0.04) 0 1px, transparent 1px 80px);
+}
+.h-dealer__pin {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  transform: translate(-50%, -100%);
+  cursor: pointer;
+}
+.h-dealer__pin svg { filter: drop-shadow(0 4px 8px rgba(34,118,219,0.4)); color: var(--vora-primary); }
+.h-dealer__pin--main svg { color: var(--vora-primary); width: 36px; height: 36px; }
+.h-dealer__pin--sub svg { color: var(--vora-sky); width: 24px; height: 24px; }
+.h-dealer__pin label {
+  background: #fff;
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--vora-ink-100);
+  letter-spacing: -0.3px;
+  box-shadow: 0 4px 12px rgba(0,9,25,0.15);
+  white-space: nowrap;
+}
+.h-dealer__pin--main label { background: var(--vora-primary); color: #fff; }
+
+.h-map-controls {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  gap: 4px;
+}
+.h-map-controls button {
+  background: #fff;
+  border: 1px solid var(--vora-line);
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  padding: 6px 12px;
+  color: var(--vora-ink-80);
+  cursor: pointer;
+}
+.h-map-controls button.is-on { background: var(--vora-primary); color: #fff; border-color: var(--vora-primary); }
+
+.h-map-zoom {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--vora-line);
+  box-shadow: 0 2px 6px rgba(0,9,25,0.10);
+}
+.h-map-zoom button {
+  width: 28px; height: 28px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  color: var(--vora-ink-80);
+  font-size: 14px;
+  font-weight: 700;
+}
+.h-map-zoom button + button { border-top: 1px solid var(--vora-line); }
+.h-map-zoom button:hover { background: var(--vora-bg-soft); }
+
+/* ── GUIDE section ── */
+.h-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.h-guide-card {
+  background: #fff;
+  border: 1px solid var(--vora-line);
+  border-radius: var(--vora-r-lg);
+  padding: 24px;
+  position: relative;
+  transition: border-color 0.18s, transform 0.18s, box-shadow 0.18s;
+  cursor: pointer;
+}
+.h-guide-card:hover {
+  border-color: var(--vora-primary);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(34,118,219,0.10);
+}
+.h-guide-card__step {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--vora-primary);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.h-guide-card__icon {
+  width: 48px; height: 48px;
+  border-radius: 12px;
+  background: var(--vora-sky-tint);
+  color: var(--vora-primary);
+  display: grid;
+  place-items: center;
+  margin-bottom: 16px;
+}
+.h-guide-card__title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--vora-ink-100);
+  margin: 0 0 8px;
+}
+.h-guide-card__desc {
+  font-size: 14px;
+  color: var(--vora-ink-60);
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+/* ── CTA banner ── */
+.h-cta {
+  background-image: linear-gradient(rgba(34,118,219,0.92), rgba(34,118,219,0.92)), url('assets/cta-bg.png');
+  background-size: cover;
+  background-position: center;
+  padding: 30px 0;
+  color: #fff;
+}
+.h-cta__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.h-cta__title {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #fff;
+  margin: 0 0 8px;
+}
+.h-cta__sub {
+  font-size: 16px;
+  color: var(--vora-ink-30);
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+/* ── FOOTER ── */
+.h-footer {
+  background: var(--vora-footer);
+  color: var(--vora-ink-40);
+  padding: 70px 0 30px;
+}
+.h-footer__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.h-footer__cols {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 24px;
+  padding-bottom: 40px;
+}
+.h-footer__about {
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  margin: 12px 0 20px;
+  color: var(--vora-ink-40);
+}
+.h-footer__socials {
+  display: flex;
+  gap: 10px;
+}
+.h-footer__socials button {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--vora-footer-divider);
+  background: transparent;
+  color: var(--vora-ink-40);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+.h-footer__socials button:hover { background: var(--vora-primary); border-color: var(--vora-primary); color: #fff; }
+
+.h-footer h5 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.3px;
+  margin: 0 0 16px;
+}
+.h-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.h-footer a {
+  color: var(--vora-ink-40);
+  text-decoration: none;
+}
+.h-footer a:hover { color: #fff; }
+.h-footer__bottom {
+  border-top: 1px solid var(--vora-footer-divider);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--vora-ink-40);
+}
+
+/* responsive guards */
+@media (max-width: 1200px) {
+  .h-brand-search { grid-template-columns: 1fr; gap: 40px; }
+  .h-brand-grid { grid-template-columns: repeat(4, 1fr); }
+  .h-dealer { grid-template-columns: 1fr; gap: 40px; }
+  .h-dealer__map { width: 100%; }
+  .h-stats__card { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .h-guide-grid { grid-template-columns: repeat(2, 1fr); }
+  .h-listings-grid--6 { grid-template-columns: repeat(3, 1fr); }
+  .h-price-detail { grid-template-columns: 1fr; }
+  .h-price-detail__left { padding-right: 0; border-right: 0; border-bottom: 1px solid var(--vora-line-strong); padding-bottom: 24px; }
+}

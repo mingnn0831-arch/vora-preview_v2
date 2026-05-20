@@ -1,0 +1,577 @@
+<!DOCTYPE html><html lang="ko"><head>
+
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VORA · 베트남 No.1 중고차 마켓플레이스</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="">
+<link rel="stylesheet" as="style" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="home.css">
+</head>
+<body class="home" data-screen-label="VORA Home" style="">
+
+<!-- ── Icon library ── -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3-3"></path></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 5 7 7-7 7"></path></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M6 12h12M10 18h4"></path></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"></path></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-7.5-7-12a7 7 0 1 1 14 0c0 4.5-7 12-7 12z"></path><circle cx="12" cy="9" r="2.5"></circle></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l2-5a3 3 0 0 1 3-2h8a3 3 0 0 1 3 2l2 5"></path><path d="M3 13h18v5a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-1H7v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"></path><circle cx="7" cy="16" r="1"></circle><circle cx="17" cy="16" r="1"></circle></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="m7 14 4-4 4 3 5-6"></path></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"></polygon></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><path d="M9 13h6M9 17h6"></path></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21 2-2 2m-7.5 5.5 5-5 2 2-5 5"></path><circle cx="8" cy="16" r="6"></circle></symbol>
+    <symbol id="i-handshake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3"></path><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-1.4-1.4l2.1-2.1a3 3 0 0 1 4.24 0l4.5 4.5"></path><path d="M21 3v9h-3"></path><path d="m18 12-7 7"></path></symbol>
+    <symbol id="i-trend-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 14 10 10 14 12 18 8"></polyline></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.8c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .2 2 .2v2.3h-1.2c-1.2 0-1.6.7-1.6 1.5V12h2.6l-.4 3h-2.2v7A10 10 0 0 0 22 12z"></path></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor"></circle></symbol>
+    <symbol id="i-zalo" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle><text x="12" y="15.5" text-anchor="middle" font-size="9" font-weight="800" fill="#2276DB" font-family="Pretendard">Z</text></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12s0-3.5-.4-5a2.5 2.5 0 0 0-1.8-1.8C17.8 4.8 12 4.8 12 4.8s-5.8 0-7.8.4A2.5 2.5 0 0 0 2.4 7C2 8.5 2 12 2 12s0 3.5.4 5a2.5 2.5 0 0 0 1.8 1.8c2 .4 7.8.4 7.8.4s5.8 0 7.8-.4A2.5 2.5 0 0 0 21.6 17c.4-1.5.4-5 .4-5zm-12 3v-6l5 3-5 3z"></path></symbol>
+    <symbol id="i-pin-fill" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22s7-7.5 7-12a7 7 0 1 0-14 0c0 4.5 7 12 7 12z"></path><circle cx="12" cy="10" r="2.5" fill="#fff"></circle></symbol>
+  </defs>
+</svg>
+
+<!-- ── VORA wordmark ── -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="vora-mark" viewBox="0 0 174 33">
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M65.1589 0.366699C73.6026 0.366699 80.4476 7.26152 80.4476 15.7667V17.2334C80.4476 25.7386 73.6026 32.6334 65.1589 32.6334H56.0585C47.6148 32.6334 40.7698 25.7386 40.7698 17.2334V15.7667C40.7698 7.26151 47.6148 0.366699 56.0585 0.366699H65.1589ZM56.0585 7.70003C51.6356 7.70003 48.0501 11.3116 48.0501 15.7667V17.2334C48.0501 21.6885 51.6356 25.3 56.0585 25.3H65.1589C69.5818 25.3 73.1673 21.6885 73.1673 17.2334V15.7667C73.1673 11.3116 69.5818 7.70003 65.1589 7.70003H56.0585Z"></path>
+    <path fill="currentColor" d="M153.677 0.366699L133.958 32.6667H142.505L153.677 14.367L164.85 32.6667H173.396L153.677 0.366699Z"></path>
+    <path fill="currentColor" d="M115.757 0.366699C121.99 0.366699 127.042 5.45573 127.042 11.7334C127.042 16.8883 123.635 21.2408 118.966 22.6331L126.804 32.6334H117.528L110.056 23.1H94.6443V32.6334H87.364V15.7667H115.757C117.969 15.7667 119.762 13.9609 119.762 11.7334C119.762 9.50582 117.969 7.70003 115.757 7.70003H87.364V0.366699H115.757Z"></path>
+    <path fill="currentColor" d="M20.0831 18.6664L24.9874 10.6334H33.5343L20.0831 32.6667L0.364014 0.366699H8.91094L20.0831 18.6664Z"></path>
+    <path fill="#35B0FC" d="M35.9968 6.60003H27.4498L31.2553 0.366699H39.8022L35.9968 6.60003Z"></path>
+  </symbol>
+</svg>
+
+<!-- ════════════════ HERO ════════════════ -->
+<section class="h-hero" data-screen-label="Hero">
+  <div class="h-hero__bg"></div>
+  <div class="h-hero__dim"></div>
+
+  <!-- Nav -->
+  <header class="h-nav">
+    <div class="h-nav__inner">
+      <div class="h-nav__left">
+        <a href="VORA Home.html"><svg viewBox="0 0 174 33" width="75" height="14" style="color:#fff"><use href="#vora-mark"></use></svg></a>
+        <nav class="h-nav__menu" aria-label="primary">
+          <a href="VORA Home.html" class="is-active">홈</a>
+          <a href="VORA Listings Screen.html">중고차 검색</a>
+          <a href="VORA Dealers.html">딜러 찾기</a>
+          <a href="VORA Dealer Lots.html">매매 단지</a>
+          <a href="#">시세</a>
+          <a href="#">가이드</a>
+          <a href="#">커뮤니티</a>
+        </nav>
+      </div>
+      <div class="h-nav__right">
+        <label class="input input--ghost">
+          <svg class="ic"><use href="#i-search"></use></svg>
+          <input type="text" placeholder="Toyota Vios, Honda City, 또는 차량번호로 검색">
+        </label>
+        <button class="btn btn--s btn--white">로그인 / 회원가입</button>
+        <button class="btn btn--icon btn--ghost" aria-label="menu"><svg class="ic" style="width:20px;height:20px"><use href="#i-menu"></use></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="h-hero__content">
+    <div class="h-hero__eyebrow">신뢰할 수 있는 중고차</div>
+    <h1 class="h-hero__title">좋은 중고차,<br>더 스마트한 선택</h1>
+    <p class="h-hero__lede">베트남 전역의 중고차를 한 곳에서 비교하고,<br>신뢰할 수 있는 거래를 경험하세요.</p>
+    <div class="h-hero__cta">
+      <a class="btn" href="VORA Listings Screen.html">중고차 검색하기 <svg class="ic"><use href="#i-arrow-right"></use></svg></a>
+      <button class="btn btn--outline">내 차 팔기</button>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ STATS ════════════════ -->
+<section class="h-stats">
+  <div class="h-stats__inner">
+    <div class="h-stats__card">
+      <div>
+        <div class="h-stat__icon"><svg width="18" height="18"><use href="#i-shield"></use></svg></div>
+        <div class="h-stat__label">실매물 검수 완료</div>
+        <div class="h-stat__value">98<span class="unit">%</span></div>
+        <div class="h-stat__note">365단계 검수로 안심 거래</div>
+      </div>
+      <div>
+        <div class="h-stat__icon"><svg width="18" height="18"><use href="#i-clock"></use></svg></div>
+        <div class="h-stat__label">평균 판매 기간</div>
+        <div class="h-stat__value">5.2<span class="unit">일</span></div>
+        <div class="h-stat__note">빠르고 효율적인 거래</div>
+      </div>
+      <div>
+        <div class="h-stat__icon"><svg width="18" height="18"><use href="#i-star"></use></svg></div>
+        <div class="h-stat__label">고객 만족도</div>
+        <div class="h-stat__value">4.9<span class="unit">/5</span></div>
+        <div class="h-stat__note">실구매자 후기 기반</div>
+      </div>
+      <div>
+        <div class="h-stat__icon"><svg width="18" height="18"><use href="#i-car"></use></svg></div>
+        <div class="h-stat__label">오늘 신규 등록</div>
+        <div class="h-stat__value">128<span class="unit">대</span></div>
+        <div class="h-stat__note">실시간 업데이트 중</div>
+      </div>
+      <div>
+        <div class="h-stat__icon"><svg width="18" height="18"><use href="#i-chart"></use></svg></div>
+        <div class="h-stat__label">누적 거래 수</div>
+        <div class="h-stat__value">85,420<span class="unit">+</span></div>
+        <div class="h-stat__note">신뢰로 쌓아온 거래 기록</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ BRAND SEARCH ════════════════ -->
+<section class="h-section h-section--soft" style="padding-top:120px;" data-screen-label="Brand search">
+  <div class="h-section__inner">
+    <div class="h-brand-search">
+      <div class="h-brand-search__copy">
+        <div>
+          <div class="h-eyebrow">빠르게 찾아보세요</div>
+          <h2 class="h-title">원하는 조건으로<br>간편하게 탐색</h2>
+          <p class="h-lede">브랜드, 가격대, 차종별로<br>원하는 차량을 빠르게 찾아보세요.</p>
+        </div>
+        <a class="h-more" href="VORA Listings Screen.html">모든 차량 보기 →</a>
+      </div>
+
+      <div>
+        <div class="h-brand-search__chips">
+          <button class="chip chip--on">브랜드</button>
+          <button class="chip">가격대</button>
+          <button class="chip">차종</button>
+        </div>
+        <div class="h-brand-grid">
+          <a class="brand-tile" href="VORA Listings Screen.html"><div class="brand-tile__logo"><img src="assets/brand-hyundai.png" alt="" style="width: 40px;"></div><div class="brand-tile__name">현대</div></a>
+          <a class="brand-tile" href="VORA Listings Screen.html"><div class="brand-tile__logo"><img src="assets/brand-toyota.png" alt="" style="width: 40px;"></div><div class="brand-tile__name">토요타</div></a>
+          <a class="brand-tile" href="VORA Listings Screen.html"><div class="brand-tile__logo"><img src="assets/brand-kia.png" alt="" style="width: 40px;"></div><div class="brand-tile__name">기아</div></a>
+          <a class="brand-tile" href="VORA Listings Screen.html"><div class="brand-tile__logo"><img src="assets/brand-mazda.png" alt="" style="width: 40px;"></div><div class="brand-tile__name">마즈다</div></a>
+          <a class="brand-tile" href="VORA Listings Screen.html"><div class="brand-tile__logo"><img src="assets/brand-mercedes.png" alt="" style="width: 40px;"></div><div class="brand-tile__name">벤츠</div></a>
+          <a class="brand-tile" href="VORA Listings Screen.html"><div class="brand-tile__logo"><img src="assets/brand-bmw.png" alt="" style="width: 40px;"></div><div class="brand-tile__name">BMW</div></a>
+          <a class="brand-tile" href="VORA Listings Screen.html"><div class="brand-tile__logo"><img src="assets/brand-honda.png" alt="" style="width: 40px;"></div><div class="brand-tile__name">혼다</div></a>
+          <a class="brand-tile" href="VORA Listings Screen.html"><div class="brand-tile__logo"><img src="assets/brand-ford.png" alt="" style="width: 40px;"></div><div class="brand-tile__name">포드</div></a>
+          <a class="brand-tile" href="VORA Listings Screen.html"><div class="brand-tile__logo"><img src="assets/brand-chevrolet.png" alt="" style="width: 40px;"></div><div class="brand-tile__name">쉐보레</div></a>
+          <a class="brand-tile" href="VORA Listings Screen.html"><div class="brand-tile__logo"><img src="assets/brand-mitsubishi.png" alt="" style="width: 40px;"></div><div class="brand-tile__name">미쓰비시</div></a>
+          <a class="brand-tile" href="VORA Listings Screen.html"><div class="brand-tile__logo"><img src="assets/brand-audi.png" alt="" style="width: 40px;"></div><div class="brand-tile__name">아우디</div></a>
+          <a class="brand-tile" href="VORA Listings Screen.html"><div class="brand-tile__more"><span></span><span></span><span></span></div><div class="brand-tile__name">더보기</div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ LISTINGS ════════════════ -->
+<section class="h-section h-listings-section" data-screen-label="Listings">
+  <div class="h-section__inner">
+
+    <!-- Recommended -->
+    <div class="h-listings-block">
+      <div class="h-section__head">
+        <h2 class="h-title h-title--small">추천 매물</h2>
+        <a class="h-more" href="VORA Listings Screen.html">더보기 →</a>
+      </div>
+      <div class="h-listings-grid">
+        <article class="listing bg-car">
+          <div class="listing__shade"></div>
+          <div class="listing__top">
+            <span class="badge badge--brand">VORA 인증</span>
+            <button class="listing__heart" aria-label="찜"><svg class="ic" style="width:14px;height:14px"><use href="#i-heart"></use></svg></button>
+          </div>
+          <div class="listing__body">
+            <div class="listing__name">2022 현대 팰리세이드</div>
+            <div class="listing__trim">2.2 디젤 프레스티지</div>
+            <div class="listing__meta">32,000 km <span class="dot"></span> <span class="fuel">디젤</span></div>
+            <div class="listing__price">1,580,000,000<span class="unit"> đ</span></div>
+          </div>
+        </article>
+        <article class="listing bg-car">
+          <div class="listing__shade"></div>
+          <div class="listing__top">
+            <span class="badge badge--cert">365 검수</span>
+            <button class="listing__heart" aria-label="찜"><svg class="ic" style="width:14px;height:14px"><use href="#i-heart"></use></svg></button>
+          </div>
+          <div class="listing__body">
+            <div class="listing__name">2021 기아 쏘렌토</div>
+            <div class="listing__trim">디젤 2.2 4WD 시그니처</div>
+            <div class="listing__meta">44,322 km <span class="dot"></span> <span class="fuel">디젤</span></div>
+            <div class="listing__price">1,120,000,000<span class="unit"> đ</span></div>
+          </div>
+        </article>
+        <article class="listing bg-car">
+          <div class="listing__shade"></div>
+          <div class="listing__top">
+            <span class="badge badge--hot">인기</span>
+            <button class="listing__heart" aria-label="찜"><svg class="ic" style="width:14px;height:14px"><use href="#i-heart"></use></svg></button>
+          </div>
+          <div class="listing__body">
+            <div class="listing__name">2023 Toyota Vios</div>
+            <div class="listing__trim">1.5G CVT Premium</div>
+            <div class="listing__meta">18,500 km <span class="dot"></span> <span class="fuel">가솔린</span></div>
+            <div class="listing__price">540,000,000<span class="unit"> đ</span></div>
+          </div>
+        </article>
+        <article class="listing bg-car">
+          <div class="listing__shade"></div>
+          <div class="listing__top">
+            <span class="badge badge--new">신규</span>
+            <button class="listing__heart" aria-label="찜"><svg class="ic" style="width:14px;height:14px"><use href="#i-heart"></use></svg></button>
+          </div>
+          <div class="listing__body">
+            <div class="listing__name">2022 Honda City</div>
+            <div class="listing__trim">RS Top Edition</div>
+            <div class="listing__meta">12,200 km <span class="dot"></span> <span class="fuel">가솔린</span></div>
+            <div class="listing__price">620,000,000<span class="unit"> đ</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="h-listings-pager"><span></span><span class="is-on"></span><span></span></div>
+    </div>
+
+    <!-- New listings -->
+    <div class="h-listings-block">
+      <div class="h-section__head">
+        <h2 class="h-title h-title--small">새로운 매물이 올라왔어요!</h2>
+        <a class="h-more" href="VORA Listings Screen.html">전체 매물 보기 →</a>
+      </div>
+      <div class="h-listings-grid h-listings-grid--6">
+        <article class="listing bg-car">
+          <div class="listing__shade"></div>
+          <div class="listing__top">
+            <span class="badge badge--new">신규</span>
+          </div>
+          <div class="listing__body">
+            <div class="listing__name">2023 VinFast VF8</div>
+            <div class="listing__trim">Eco Plus Long Range</div>
+            <div class="listing__meta">8,400 km <span class="dot"></span> <span class="fuel">전기</span></div>
+            <div class="listing__price">1,290,000,000<span class="unit"> đ</span></div>
+          </div>
+        </article>
+        <article class="listing bg-car">
+          <div class="listing__shade"></div>
+          <div class="listing__top">
+            <span class="badge badge--brand">VORA 인증</span>
+          </div>
+          <div class="listing__body">
+            <div class="listing__name">2022 Mazda CX-5</div>
+            <div class="listing__trim">2.5 Premium Plus</div>
+            <div class="listing__meta">28,100 km <span class="dot"></span> <span class="fuel">가솔린</span></div>
+            <div class="listing__price">880,000,000<span class="unit"> đ</span></div>
+          </div>
+        </article>
+        <article class="listing bg-car">
+          <div class="listing__shade"></div>
+          <div class="listing__top">
+            <span class="badge badge--cert">365 검수</span>
+          </div>
+          <div class="listing__body">
+            <div class="listing__name">2023 현대 투싼</div>
+            <div class="listing__trim">하이브리드 X-Line</div>
+            <div class="listing__meta">14,800 km <span class="dot"></span> <span class="fuel">하이브리드</span></div>
+            <div class="listing__price">1,050,000,000<span class="unit"> đ</span></div>
+          </div>
+        </article>
+        <article class="listing bg-car">
+          <div class="listing__shade"></div>
+          <div class="listing__top">
+            <span class="badge badge--new">신규</span>
+          </div>
+          <div class="listing__body">
+            <div class="listing__name">2022 기아 K5</div>
+            <div class="listing__trim">2.0 노블레스</div>
+            <div class="listing__meta">22,500 km <span class="dot"></span> <span class="fuel">가솔린</span></div>
+            <div class="listing__price">760,000,000<span class="unit"> đ</span></div>
+          </div>
+        </article>
+        <article class="listing bg-car">
+          <div class="listing__shade"></div>
+          <div class="listing__top">
+            <span class="badge badge--brand">VORA 인증</span>
+          </div>
+          <div class="listing__body">
+            <div class="listing__name">2021 Honda CR-V</div>
+            <div class="listing__trim">1.5L Turbo Sensing</div>
+            <div class="listing__meta">38,200 km <span class="dot"></span> <span class="fuel">가솔린</span></div>
+            <div class="listing__price">920,000,000<span class="unit"> đ</span></div>
+          </div>
+        </article>
+        <article class="listing bg-car">
+          <div class="listing__shade"></div>
+          <div class="listing__top">
+            <span class="badge badge--hot">인기</span>
+          </div>
+          <div class="listing__body">
+            <div class="listing__name">2024 Toyota Camry</div>
+            <div class="listing__trim">2.5Q Premium</div>
+            <div class="listing__meta">6,800 km <span class="dot"></span> <span class="fuel">가솔린</span></div>
+            <div class="listing__price">1,320,000,000<span class="unit"> đ</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════ PRICE CHECK ════════════════ -->
+<section class="h-section h-section--blue" data-screen-label="Price check">
+  <div class="h-section__inner">
+    <div class="h-section__head h-section__head--centered">
+      <div class="h-eyebrow h-eyebrow--deep">내 차의 가치는 얼마일까?</div>
+      <h2 class="h-title">간편한 시세 조회</h2>
+      <p class="h-lede h-lede--center">정확한 시세 데이터로 합리적인 거래를 도와드립니다.</p>
+    </div>
+
+    <div class="h-price-cards">
+
+      <div class="h-price-card">
+        <div class="h-price-card__head">
+          <div class="h-price-card__title">원하는 조건으로 시세를 조회해보세요.</div>
+          <div class="h-price-card__note">*최근 3개월 내 거래된 5,420건의 데이터를 기반으로 분석합니다.</div>
+        </div>
+        <div class="h-price-form">
+          <label class="input"><input type="text" placeholder="제조사 선택"><svg class="ic"><use href="#i-chevron"></use></svg></label>
+          <label class="input"><input type="text" placeholder="모델 선택"><svg class="ic"><use href="#i-chevron"></use></svg></label>
+          <label class="input"><input type="text" placeholder="연식 선택"><svg class="ic"><use href="#i-chevron"></use></svg></label>
+          <label class="input"><input type="text" placeholder="주행거리"><svg class="ic"><use href="#i-chevron"></use></svg></label>
+          <button class="btn">시세 조회 <svg class="ic"><use href="#i-arrow-right"></use></svg></button>
+        </div>
+      </div>
+
+      <div class="h-price-detail">
+        <div class="h-price-detail__left">
+          <div>
+            <div class="h-price-section__title">시장 동향 한눈에 보기</div>
+            <div class="h-price-summary">
+              <div class="h-price-summary__label">전체 평균 시세</div>
+              <div class="h-price-summary__value">1,580<span class="unit">만원 đ</span></div>
+              <div class="h-price-summary__delta">
+                <span>전월 대비</span>
+                <span class="badge badge--rise"><svg class="ic" style="width:12px;height:12px"><use href="#i-trend-up"></use></svg>1.2%</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="h-price-section__subtitle">많이 조회된 모델</div>
+            <div class="rowcard" style="background: rgb(255, 255, 255); padding: 8px 12px 8px 1px; margin: 5px;">
+              <div class="rowcard__thumb bg-car" style="margin-left:6px"></div>
+              <div class="rowcard__main">
+                <div class="rowcard__title">현대 투싼 ix 디젤 2WD LX20</div>
+                <div class="rowcard__meta">럭셔리 · 디젤</div>
+              </div>
+              <div style="display:flex; flex-direction:column; align-items:flex-end; gap:4px; padding-right:8px">
+                <div class="rowcard__price-col"><div class="rowcard__price">1,120,000,000<span class="unit"> đ</span></div><span class="badge badge--rise"><svg class="ic" style="width:12px;height:12px"><use href="#i-trend-up"></use></svg>1.2%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="h-price-section__title">이번주 인기 차종 TOP 5</div>
+          <div class="h-price-top5">
+            <div class="rowcard" style="text-align: left; padding: 8px 12px 8px 6px;">
+              <span class="rowcard__rank" style="text-align: left;">1</span>
+              <div class="rowcard__thumb bg-car"></div>
+              <div class="rowcard__main" style="text-align: left;">
+                <div class="rowcard__title" style="text-align: left;">현대 투싼 ix 디젤 2WD LX20 럭셔리</div>
+                <div class="rowcard__meta" style="text-align: left;">44,322km · 디젤 · 하노이</div>
+              </div>
+              <div class="rowcard__price-col" style="text-align: left;"><div class="rowcard__price" style="text-align: left;">1,120,000,000<span class="unit" style="text-align: left;"> đ</span></div><span class="badge badge--rise" style="text-align: left;"><svg class="ic" style="width:12px;height:12px"><use href="#i-trend-up"></use></svg>1.2%</span></div>
+            </div>
+            <div class="rowcard" style="padding: 8px 12px 8px 6px;">
+              <span class="rowcard__rank">2</span>
+              <div class="rowcard__thumb bg-car"></div>
+              <div class="rowcard__main">
+                <div class="rowcard__title">현대 싼타페 TM 디젤 2.0 2WD 익스클루시브</div>
+                <div class="rowcard__meta">52,108km · 디젤 · 호치민</div>
+              </div>
+              <div class="rowcard__price-col"><div class="rowcard__price">980,000,000<span class="unit"> đ</span></div><span class="badge badge--rise"><svg class="ic" style="width:12px;height:12px"><use href="#i-trend-up"></use></svg>0.8%</span></div>
+            </div>
+            <div class="rowcard">
+              <span class="rowcard__rank">3</span>
+              <div class="rowcard__thumb bg-car"></div>
+              <div class="rowcard__main">
+                <div class="rowcard__title">기아 쏘렌토 4세대 디젤 2.2 2WD 시그니처</div>
+                <div class="rowcard__meta">38,910km · 디젤 · 다낭</div>
+              </div>
+              <div class="rowcard__price-col"><div class="rowcard__price">1,250,000,000<span class="unit"> đ</span></div><span class="badge badge--rise"><svg class="ic" style="width:12px;height:12px"><use href="#i-trend-up"></use></svg>2.1%</span></div>
+            </div>
+            <div class="rowcard">
+              <span class="rowcard__rank">4</span>
+              <div class="rowcard__thumb bg-car"></div>
+              <div class="rowcard__main">
+                <div class="rowcard__title">현대 쏘나타 (DN8) 2.0 LPG 인스퍼레이션</div>
+                <div class="rowcard__meta">27,540km · LPG · 하노이</div>
+              </div>
+              <div class="rowcard__price-col"><div class="rowcard__price">680,000,000<span class="unit"> đ</span></div><span class="badge badge--rise"><svg class="ic" style="width:12px;height:12px"><use href="#i-trend-up"></use></svg>1.5%</span></div>
+            </div>
+            <div class="rowcard">
+              <span class="rowcard__rank">5</span>
+              <div class="rowcard__thumb bg-car"></div>
+              <div class="rowcard__main">
+                <div class="rowcard__title">기아 쏘렌토 4세대 디젤 2.2 4WD 시그니처</div>
+                <div class="rowcard__meta">41,200km · 디젤 · 호치민</div>
+              </div>
+              <div class="rowcard__price-col"><div class="rowcard__price">1,310,000,000<span class="unit"> đ</span></div><span class="badge badge--rise"><svg class="ic" style="width:12px;height:12px"><use href="#i-trend-up"></use></svg>0.9%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ DEALER LOT ════════════════ -->
+<section class="h-section h-section--dark" data-screen-label="Dealer lot">
+  <div class="h-section__inner">
+    <div class="h-dealer">
+      <div class="h-dealer__copy">
+        <div>
+          <div class="h-eyebrow h-eyebrow--light">하노이 중고차 매매단지</div>
+          <h2 class="h-title h-title--light">직접 보고, 비교하고,<br>믿고 거래하세요</h2>
+        </div>
+        <div class="h-dealer__meta">
+          <div><svg class="ic" style="width:18px;height:18px"><use href="#i-clock"></use></svg> 운영시간 · 09:00 – 19:00 (연중무휴)</div>
+          <div><svg class="ic" style="width:18px;height:18px"><use href="#i-pin"></use></svg> 하노이 까우자이, Phạm Hùng</div>
+          <div><svg class="ic" style="width:18px;height:18px"><use href="#i-phone"></use></svg> Zalo · +84 912 345 678</div>
+        </div>
+        <div><button class="btn btn--white">매매단지 둘러보기 <svg class="ic"><use href="#i-arrow-right"></use></svg></button></div>
+      </div>
+
+      <div class="h-dealer__map" aria-label="하노이 매매단지 지도" style="width: 634px; border-radius: 12px;">
+        <div class="h-map-controls">
+          <button class="is-on">지도</button>
+          <button>위성</button>
+        </div>
+        <div class="h-map-zoom">
+          <button aria-label="zoom in">+</button>
+          <button aria-label="zoom out">−</button>
+        </div>
+        <div class="h-dealer__pin h-dealer__pin--main" style="left:48%; top:50%">
+          <label>까우자이 본점</label>
+          <svg viewBox="0 0 24 24"><use href="#i-pin-fill"></use></svg>
+        </div>
+        <div class="h-dealer__pin h-dealer__pin--sub" style="left:28%; top:38%">
+          <svg viewBox="0 0 24 24"><use href="#i-pin-fill"></use></svg>
+        </div>
+        <div class="h-dealer__pin h-dealer__pin--sub" style="left:68%; top:32%">
+          <svg viewBox="0 0 24 24"><use href="#i-pin-fill"></use></svg>
+        </div>
+        <div class="h-dealer__pin h-dealer__pin--sub" style="left:38%; top:70%">
+          <svg viewBox="0 0 24 24"><use href="#i-pin-fill"></use></svg>
+        </div>
+        <div class="h-dealer__pin h-dealer__pin--sub" style="left:74%; top:65%">
+          <svg viewBox="0 0 24 24"><use href="#i-pin-fill"></use></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ GUIDE ════════════════ -->
+<section class="h-section h-section--soft" data-screen-label="Guide">
+  <div class="h-section__inner">
+    <div class="h-section__head h-section__head--centered">
+      <div class="h-eyebrow">처음부터 끝까지</div>
+      <h2 class="h-title">중고차 구매 가이드</h2>
+      <p class="h-lede h-lede--center" style="font-size:15px; color:var(--vora-ink-50)">복잡한 중고차 구매, 단계별 가이드를 따라 안전하고 현명하게 진행하세요.</p>
+    </div>
+
+    <div class="h-guide-grid">
+      <div class="h-guide-card">
+        <div class="h-guide-card__step">STEP 01</div>
+        <div class="h-guide-card__icon"><svg width="22" height="22"><use href="#i-search"></use></svg></div>
+        <h3 class="h-guide-card__title">조건에 맞는 차량 찾기</h3>
+        <p class="h-guide-card__desc">브랜드, 가격, 연식, 주행거리 등 원하는 조건으로 매물을 빠르게 탐색하세요.</p>
+      </div>
+      <div class="h-guide-card">
+        <div class="h-guide-card__step">STEP 02</div>
+        <div class="h-guide-card__icon"><svg width="22" height="22"><use href="#i-shield"></use></svg></div>
+        <h3 class="h-guide-card__title">365단계 검수 확인</h3>
+        <p class="h-guide-card__desc">VORA 인증 매물의 상세 검수 리포트로 차량 상태를 투명하게 확인하세요.</p>
+      </div>
+      <div class="h-guide-card">
+        <div class="h-guide-card__step">STEP 03</div>
+        <div class="h-guide-card__icon"><svg width="22" height="22"><use href="#i-handshake"></use></svg></div>
+        <h3 class="h-guide-card__title">안전하게 거래하기</h3>
+        <p class="h-guide-card__desc">매매단지에서 실차 확인 후, 안전 결제와 명의 이전까지 한 번에 진행합니다.</p>
+      </div>
+      <div class="h-guide-card">
+        <div class="h-guide-card__step">STEP 04</div>
+        <div class="h-guide-card__icon"><svg width="22" height="22"><use href="#i-key"></use></svg></div>
+        <h3 class="h-guide-card__title">내 차로 인수</h3>
+        <p class="h-guide-card__desc">출고와 동시에 30일 안심 보증과 멤버십 혜택이 자동으로 시작됩니다.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:40px;"><a class="h-more" href="#">가이드 전체 보기 →</a></div>
+  </div>
+</section>
+
+<!-- ════════════════ CTA banner ════════════════ -->
+<section class="h-cta">
+  <div class="h-cta__inner">
+    <div>
+      <h3 class="h-cta__title">신뢰할 수 있는 중고차 거래의 시작</h3>
+      <div class="h-cta__sub">지금 바로 시작하고, 최고의 차량을 찾아보세요.</div>
+    </div>
+    <a class="btn btn--white" href="VORA Listings Screen.html">중고차 검색하기 <svg class="ic"><use href="#i-arrow-right"></use></svg></a>
+  </div>
+</section>
+
+<!-- ════════════════ FOOTER ════════════════ -->
+<footer class="h-footer">
+  <div class="h-footer__inner">
+    <div class="h-footer__cols">
+      <div>
+        <svg viewBox="0 0 174 33" width="100" height="19" style="color:#fff"><use href="#vora-mark"></use></svg>
+        <p class="h-footer__about">베트남 No.1 중고차 마켓플레이스<br>신뢰할 수 있는 거래 문화를 만들어갑니다.</p>
+        <div class="h-footer__socials">
+          <button aria-label="Facebook"><svg width="14" height="14"><use href="#i-facebook"></use></svg></button>
+          <button aria-label="Instagram"><svg width="14" height="14"><use href="#i-instagram"></use></svg></button>
+          <button aria-label="Youtube"><svg width="14" height="14"><use href="#i-youtube"></use></svg></button>
+          <button aria-label="Zalo"><svg width="14" height="14"><use href="#i-zalo"></use></svg></button>
+        </div>
+      </div>
+      <div>
+        <h5>서비스</h5>
+        <ul><li><a href="VORA Listings Screen.html">중고차 검색</a></li><li><a href="#">시세 조회</a></li><li><a href="#">내 차 팔기</a></li><li><a href="VORA Dealers.html">딜러 찾기</a></li><li><a href="VORA Dealer Lots.html">매매 단지</a></li></ul>
+      </div>
+      <div>
+        <h5>가이드</h5>
+        <ul><li><a href="#">구매 가이드</a></li><li><a href="#">판매 가이드</a></li><li><a href="#">금융 안내</a></li><li><a href="#">자주 묻는 질문</a></li></ul>
+      </div>
+      <div>
+        <h5>회사</h5>
+        <ul><li><a href="#">About VORA</a></li><li><a href="#">파트너십</a></li><li><a href="#">채용</a></li><li><a href="#">보도자료</a></li></ul>
+      </div>
+      <div>
+        <h5>문의 전화</h5>
+        <ul style="color:#fff">
+          <li style="color:#fff; font-weight:700; font-size:15px">+84 912 345 678</li>
+          <li>09:00 – 18:00</li>
+        </ul>
+        <h5 style="margin-top:20px">이메일</h5>
+        <ul><li><a href="#">support@vora.vn</a></li></ul>
+      </div>
+    </div>
+    <div class="h-footer__bottom">
+      <span>© 2026 VORA. All rights reserved.</span>
+      <span>사업자 등록번호: 010-123-4567 · 대표자: Phạm Hùng</span>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

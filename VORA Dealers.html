@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>VORA · 딜러 찾기</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" as="style" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="listings.css" />
+<link rel="stylesheet" href="subpages.css" />
+</head>
+<body class="dealers" data-screen-label="Dealers">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3-3"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M6 12h12M10 18h4"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-7.5-7-12a7 7 0 1 1 14 0c0 4.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+    <symbol id="i-verified" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 9.5 4 6 4l-1 3.5-3 2.5 2 3-2 3.5 3 2.5L6 22l3.5-1 2.5 1 3-1L18 22l1.5-3 2.5-2.5-2-3 2-3-2.5-2.5L18 4l-3-1z"/><path d="m8 12 3 3 5-5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></symbol>
+    <symbol id="i-zalo" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><text x="12" y="15.5" text-anchor="middle" font-size="9" font-weight="800" fill="#2276DB" font-family="Pretendard">Z</text></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  </defs>
+</svg>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="vora-mark" viewBox="0 0 174 33">
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M65.1589 0.366699C73.6026 0.366699 80.4476 7.26152 80.4476 15.7667V17.2334C80.4476 25.7386 73.6026 32.6334 65.1589 32.6334H56.0585C47.6148 32.6334 40.7698 25.7386 40.7698 17.2334V15.7667C40.7698 7.26151 47.6148 0.366699 56.0585 0.366699H65.1589ZM56.0585 7.70003C51.6356 7.70003 48.0501 11.3116 48.0501 15.7667V17.2334C48.0501 21.6885 51.6356 25.3 56.0585 25.3H65.1589C69.5818 25.3 73.1673 21.6885 73.1673 17.2334V15.7667C73.1673 11.3116 69.5818 7.70003 65.1589 7.70003H56.0585Z"/>
+    <path fill="currentColor" d="M153.677 0.366699L133.958 32.6667H142.505L153.677 14.367L164.85 32.6667H173.396L153.677 0.366699Z"/>
+    <path fill="currentColor" d="M115.757 0.366699C121.99 0.366699 127.042 5.45573 127.042 11.7334C127.042 16.8883 123.635 21.2408 118.966 22.6331L126.804 32.6334H117.528L110.056 23.1H94.6443V32.6334H87.364V15.7667H115.757C117.969 15.7667 119.762 13.9609 119.762 11.7334C119.762 9.50582 117.969 7.70003 115.757 7.70003H87.364V0.366699H115.757Z"/>
+    <path fill="currentColor" d="M20.0831 18.6664L24.9874 10.6334H33.5343L20.0831 32.6667L0.364014 0.366699H8.91094L20.0831 18.6664Z"/>
+    <path fill="#35B0FC" d="M35.9968 6.60003H27.4498L31.2553 0.366699H39.8022L35.9968 6.60003Z"/>
+  </symbol>
+</svg>
+
+<!-- ── TOP NAV ── -->
+<header class="topnav">
+  <div class="topnav__inner">
+    <div class="topnav__left">
+      <a href="VORA Home.html"><svg viewBox="0 0 174 33" width="75" height="14" style="color:var(--vora-ink-90)"><use href="#vora-mark"/></svg></a>
+      <nav class="topnav__nav">
+        <a href="VORA Home.html">홈</a>
+        <a href="VORA Listings Screen.html">중고차 검색</a>
+        <a href="VORA Dealers.html" class="is-active">딜러 찾기</a>
+        <a href="VORA Dealer Lots.html">매매 단지</a>
+        <a href="#">시세</a>
+        <a href="#">가이드</a>
+        <a href="#">커뮤니티</a>
+      </nav>
+    </div>
+    <div class="topnav__right">
+      <label class="input">
+        <svg class="ic"><use href="#i-search"/></svg>
+        <input type="text" placeholder="딜러 이름, 지역, 차종으로 검색" />
+      </label>
+      <button class="btn btn--s btn--outline-ink">로그인 / 회원가입</button>
+    </div>
+  </div>
+</header>
+
+<div class="subpage">
+
+  <!-- PAGE HEAD -->
+  <div class="subhead">
+    <div>
+      <div class="crumbs">홈 <span>›</span> <b>딜러 찾기</b></div>
+      <h1 class="subhead__title">신뢰할 수 있는 <em>딜러</em></h1>
+      <div class="subhead__count">전체 <b>1,284</b>명 · VORA 인증 딜러 <b>342</b>명 · 평균 응답 <b>4분</b></div>
+    </div>
+    <div class="subhead__right">
+      <button class="btn btn--s btn--outline-ink"><svg class="ic"><use href="#i-bell"/></svg>&nbsp;딜러 알림</button>
+      <button class="btn btn--s">딜러 등록 문의 <svg class="ic"><use href="#i-arrow-right"/></svg></button>
+    </div>
+  </div>
+
+  <!-- LAYOUT -->
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar__head">
+        <h3><svg class="ic" style="width:14px;height:14px"><use href="#i-filter"/></svg> 검색 필터</h3>
+        <button class="reset">초기화</button>
+      </div>
+      <div class="sidebar__body">
+
+        <div class="filter" data-open="true">
+          <div class="filter__head"><h4>지역</h4><svg class="chev"><use href="#i-chevron"/></svg></div>
+          <div class="filter__body">
+            <div class="bodychips">
+              <button class="bodychip is-on">하노이</button>
+              <button class="bodychip">호치민</button>
+              <button class="bodychip">다낭</button>
+              <button class="bodychip">하이퐁</button>
+              <button class="bodychip">껀터</button>
+              <button class="bodychip">냐짱</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter" data-open="true">
+          <div class="filter__head"><h4>전문 브랜드</h4><svg class="chev"><use href="#i-chevron"/></svg></div>
+          <div class="filter__body">
+            <label class="check"><input type="checkbox" checked><span class="check__box"></span><span>현대</span><span class="check__count">312</span></label>
+            <label class="check"><input type="checkbox" checked><span class="check__box"></span><span>기아</span><span class="check__count">248</span></label>
+            <label class="check"><input type="checkbox"><span class="check__box"></span><span>Toyota</span><span class="check__count">428</span></label>
+            <label class="check"><input type="checkbox"><span class="check__box"></span><span>Honda</span><span class="check__count">196</span></label>
+            <label class="check"><input type="checkbox"><span class="check__box"></span><span>Mazda</span><span class="check__count">102</span></label>
+            <label class="check"><input type="checkbox"><span class="check__box"></span><span>Ford</span><span class="check__count">88</span></label>
+            <label class="check"><input type="checkbox"><span class="check__box"></span><span>VinFast</span><span class="check__count">154</span></label>
+            <label class="check"><input type="checkbox"><span class="check__box"></span><span>BMW · 수입차</span><span class="check__count">62</span></label>
+          </div>
+        </div>
+
+        <div class="filter" data-open="true">
+          <div class="filter__head"><h4>평점</h4><svg class="chev"><use href="#i-chevron"/></svg></div>
+          <div class="filter__body">
+            <label class="check"><input type="checkbox" checked><span class="check__box"></span><span>4.5점 이상</span><span class="check__count">462</span></label>
+            <label class="check"><input type="checkbox"><span class="check__box"></span><span>4.0점 이상</span><span class="check__count">812</span></label>
+            <label class="check"><input type="checkbox"><span class="check__box"></span><span>3.5점 이상</span><span class="check__count">1,108</span></label>
+          </div>
+        </div>
+
+        <div class="filter" data-open="true">
+          <div class="filter__head"><h4>특징</h4><svg class="chev"><use href="#i-chevron"/></svg></div>
+          <div class="filter__body">
+            <label class="check"><input type="checkbox" checked><span class="check__box"></span><span>VORA 인증 딜러</span></label>
+            <label class="check"><input type="checkbox"><span class="check__box"></span><span>현재 영업중</span></label>
+            <label class="check"><input type="checkbox"><span class="check__box"></span><span>당일 응답 가능</span></label>
+            <label class="check"><input type="checkbox"><span class="check__box"></span><span>방문 시승 가능</span></label>
+            <label class="check"><input type="checkbox"><span class="check__box"></span><span>대출/할부 지원</span></label>
+            <label class="check"><input type="checkbox"><span class="check__box"></span><span>외국인 고객 응대</span></label>
+          </div>
+        </div>
+
+        <div class="filter" data-open="false">
+          <div class="filter__head"><h4>매물 수</h4><svg class="chev"><use href="#i-chevron"/></svg></div>
+          <div class="filter__body">
+            <label class="check"><input type="checkbox"><span class="check__box"></span><span>10대 이상</span></label>
+            <label class="check"><input type="checkbox"><span class="check__box"></span><span>30대 이상</span></label>
+            <label class="check"><input type="checkbox"><span class="check__box"></span><span>50대 이상</span></label>
+          </div>
+        </div>
+
+      </div>
+    </aside>
+
+    <!-- CONTENT -->
+    <main>
+      <div class="toolbar">
+        <div class="toolbar__chips">
+          <span class="activechip">하노이<button aria-label="제거"><svg class="ic" style="width:10px;height:10px"><use href="#i-close"/></svg></button></span>
+          <span class="activechip">현대<button aria-label="제거"><svg class="ic" style="width:10px;height:10px"><use href="#i-close"/></svg></button></span>
+          <span class="activechip">기아<button aria-label="제거"><svg class="ic" style="width:10px;height:10px"><use href="#i-close"/></svg></button></span>
+          <span class="activechip">4.5점 이상<button aria-label="제거"><svg class="ic" style="width:10px;height:10px"><use href="#i-close"/></svg></button></span>
+          <span class="activechip">VORA 인증<button aria-label="제거"><svg class="ic" style="width:10px;height:10px"><use href="#i-close"/></svg></button></span>
+          <button class="clear">모두 지우기</button>
+        </div>
+        <div class="toolbar__right">
+          <button class="sort">평점 높은순 <svg class="ic"><use href="#i-chevron"/></svg></button>
+        </div>
+      </div>
+
+      <div class="grid">
+        <!-- Dealer card 1 -->
+        <article class="dcard">
+          <div class="dcard__cover">
+            <span class="badge badge--brand dcard__badge">VORA 인증</span>
+            <button class="dcard__heart" aria-label="찜"><svg class="ic" style="width:14px;height:14px"><use href="#i-heart"/></svg></button>
+            <div class="dcard__avatar av-h">현</div>
+          </div>
+          <div class="dcard__body">
+            <div>
+              <div class="dcard__name">Hanoi Premium Motors <svg class="ic ic-verified"><use href="#i-verified"/></svg></div>
+              <div class="dcard__region"><svg class="ic" style="width:12px;height:12px"><use href="#i-pin"/></svg> 하노이 까우자이 · Phạm Hùng</div>
+            </div>
+            <div class="dcard__rating">
+              <span class="stars"><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg></span>
+              4.9 <span class="reviews">(218)</span>
+            </div>
+            <div class="dcard__specs">
+              <span class="chip">현대</span><span class="chip">기아</span><span class="chip">SUV</span>
+            </div>
+            <div class="dcard__stats">
+              <div class="dcard__stat"><label>등록 매물</label><strong>48<span class="unit">대</span></strong></div>
+              <div class="dcard__stat"><label>평균 응답</label><strong>3<span class="unit">분</span></strong></div>
+            </div>
+            <div class="dcard__actions">
+              <button class="btn btn--s btn--outline-ink"><svg class="ic"><use href="#i-zalo"/></svg> Zalo</button>
+              <button class="btn btn--s">상세보기 <svg class="ic"><use href="#i-arrow-right"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dealer card 2 -->
+        <article class="dcard">
+          <div class="dcard__cover dcard__cover--neutral">
+            <span class="badge badge--brand dcard__badge">VORA 인증</span>
+            <button class="dcard__heart" aria-label="찜"><svg class="ic" style="width:14px;height:14px"><use href="#i-heart"/></svg></button>
+            <div class="dcard__avatar av-k">K</div>
+          </div>
+          <div class="dcard__body">
+            <div>
+              <div class="dcard__name">Kim Auto Trading <svg class="ic ic-verified"><use href="#i-verified"/></svg></div>
+              <div class="dcard__region"><svg class="ic" style="width:12px;height:12px"><use href="#i-pin"/></svg> 하노이 동다 · Lê Văn Lương</div>
+            </div>
+            <div class="dcard__rating">
+              <span class="stars"><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px" style="opacity:0.4"><use href="#i-star"/></svg></span>
+              4.8 <span class="reviews">(156)</span>
+            </div>
+            <div class="dcard__specs">
+              <span class="chip">기아</span><span class="chip">현대</span><span class="chip">세단</span>
+            </div>
+            <div class="dcard__stats">
+              <div class="dcard__stat"><label>등록 매물</label><strong>32<span class="unit">대</span></strong></div>
+              <div class="dcard__stat"><label>평균 응답</label><strong>5<span class="unit">분</span></strong></div>
+            </div>
+            <div class="dcard__actions">
+              <button class="btn btn--s btn--outline-ink"><svg class="ic"><use href="#i-zalo"/></svg> Zalo</button>
+              <button class="btn btn--s">상세보기 <svg class="ic"><use href="#i-arrow-right"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dealer card 3 -->
+        <article class="dcard">
+          <div class="dcard__cover dcard__cover--teal">
+            <span class="badge badge--cert dcard__badge">365 검수</span>
+            <button class="dcard__heart" aria-label="찜"><svg class="ic" style="width:14px;height:14px"><use href="#i-heart"/></svg></button>
+            <div class="dcard__avatar av-v">V</div>
+          </div>
+          <div class="dcard__body">
+            <div>
+              <div class="dcard__name">VinFast Hanoi East</div>
+              <div class="dcard__region"><svg class="ic" style="width:12px;height:12px"><use href="#i-pin"/></svg> 하노이 롱비엔 · Aeon Mall</div>
+            </div>
+            <div class="dcard__rating">
+              <span class="stars"><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg></span>
+              4.9 <span class="reviews">(412)</span>
+            </div>
+            <div class="dcard__specs">
+              <span class="chip">VinFast</span><span class="chip">전기차</span><span class="chip">SUV</span>
+            </div>
+            <div class="dcard__stats">
+              <div class="dcard__stat"><label>등록 매물</label><strong>76<span class="unit">대</span></strong></div>
+              <div class="dcard__stat"><label>평균 응답</label><strong>2<span class="unit">분</span></strong></div>
+            </div>
+            <div class="dcard__actions">
+              <button class="btn btn--s btn--outline-ink"><svg class="ic"><use href="#i-zalo"/></svg> Zalo</button>
+              <button class="btn btn--s">상세보기 <svg class="ic"><use href="#i-arrow-right"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dealer card 4 -->
+        <article class="dcard">
+          <div class="dcard__cover dcard__cover--violet">
+            <span class="badge badge--brand dcard__badge">VORA 인증</span>
+            <button class="dcard__heart" aria-label="찜"><svg class="ic" style="width:14px;height:14px"><use href="#i-heart"/></svg></button>
+            <div class="dcard__avatar av-t">T</div>
+          </div>
+          <div class="dcard__body">
+            <div>
+              <div class="dcard__name">Trần Auto Premium <svg class="ic ic-verified"><use href="#i-verified"/></svg></div>
+              <div class="dcard__region"><svg class="ic" style="width:12px;height:12px"><use href="#i-pin"/></svg> 하노이 호안끼엠 · Trần Hưng Đạo</div>
+            </div>
+            <div class="dcard__rating">
+              <span class="stars"><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg></span>
+              5.0 <span class="reviews">(89)</span>
+            </div>
+            <div class="dcard__specs">
+              <span class="chip">BMW</span><span class="chip">Mercedes</span><span class="chip">수입차</span>
+            </div>
+            <div class="dcard__stats">
+              <div class="dcard__stat"><label>등록 매물</label><strong>22<span class="unit">대</span></strong></div>
+              <div class="dcard__stat"><label>평균 응답</label><strong>6<span class="unit">분</span></strong></div>
+            </div>
+            <div class="dcard__actions">
+              <button class="btn btn--s btn--outline-ink"><svg class="ic"><use href="#i-zalo"/></svg> Zalo</button>
+              <button class="btn btn--s">상세보기 <svg class="ic"><use href="#i-arrow-right"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dealer card 5 -->
+        <article class="dcard">
+          <div class="dcard__cover dcard__cover--amber">
+            <span class="badge badge--brand dcard__badge">VORA 인증</span>
+            <button class="dcard__heart" aria-label="찜"><svg class="ic" style="width:14px;height:14px"><use href="#i-heart"/></svg></button>
+            <div class="dcard__avatar av-b">L</div>
+          </div>
+          <div class="dcard__body">
+            <div>
+              <div class="dcard__name">Lê Auto Trade Center <svg class="ic ic-verified"><use href="#i-verified"/></svg></div>
+              <div class="dcard__region"><svg class="ic" style="width:12px;height:12px"><use href="#i-pin"/></svg> 하노이 빈쭝 · Royal City</div>
+            </div>
+            <div class="dcard__rating">
+              <span class="stars"><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg></span>
+              4.7 <span class="reviews">(284)</span>
+            </div>
+            <div class="dcard__specs">
+              <span class="chip">Toyota</span><span class="chip">Honda</span><span class="chip">미니밴</span>
+            </div>
+            <div class="dcard__stats">
+              <div class="dcard__stat"><label>등록 매물</label><strong>54<span class="unit">대</span></strong></div>
+              <div class="dcard__stat"><label>평균 응답</label><strong>4<span class="unit">분</span></strong></div>
+            </div>
+            <div class="dcard__actions">
+              <button class="btn btn--s btn--outline-ink"><svg class="ic"><use href="#i-zalo"/></svg> Zalo</button>
+              <button class="btn btn--s">상세보기 <svg class="ic"><use href="#i-arrow-right"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dealer card 6 -->
+        <article class="dcard">
+          <div class="dcard__cover">
+            <span class="badge badge--hot dcard__badge">인기</span>
+            <button class="dcard__heart" aria-label="찜"><svg class="ic" style="width:14px;height:14px"><use href="#i-heart"/></svg></button>
+            <div class="dcard__avatar av-h">N</div>
+          </div>
+          <div class="dcard__body">
+            <div>
+              <div class="dcard__name">Nguyễn Motors <svg class="ic ic-verified"><use href="#i-verified"/></svg></div>
+              <div class="dcard__region"><svg class="ic" style="width:12px;height:12px"><use href="#i-pin"/></svg> 하노이 떠이호 · Lạc Long Quân</div>
+            </div>
+            <div class="dcard__rating">
+              <span class="stars"><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg></span>
+              4.8 <span class="reviews">(192)</span>
+            </div>
+            <div class="dcard__specs">
+              <span class="chip">현대</span><span class="chip">SUV</span><span class="chip">디젤</span>
+            </div>
+            <div class="dcard__stats">
+              <div class="dcard__stat"><label>등록 매물</label><strong>38<span class="unit">대</span></strong></div>
+              <div class="dcard__stat"><label>평균 응답</label><strong>5<span class="unit">분</span></strong></div>
+            </div>
+            <div class="dcard__actions">
+              <button class="btn btn--s btn--outline-ink"><svg class="ic"><use href="#i-zalo"/></svg> Zalo</button>
+              <button class="btn btn--s">상세보기 <svg class="ic"><use href="#i-arrow-right"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dealer card 7 -->
+        <article class="dcard">
+          <div class="dcard__cover dcard__cover--neutral">
+            <span class="badge badge--cert dcard__badge">365 검수</span>
+            <button class="dcard__heart" aria-label="찜"><svg class="ic" style="width:14px;height:14px"><use href="#i-heart"/></svg></button>
+            <div class="dcard__avatar av-m">D</div>
+          </div>
+          <div class="dcard__body">
+            <div>
+              <div class="dcard__name">Đại Phát Auto</div>
+              <div class="dcard__region"><svg class="ic" style="width:12px;height:12px"><use href="#i-pin"/></svg> 하노이 하동 · Tô Hiệu</div>
+            </div>
+            <div class="dcard__rating">
+              <span class="stars"><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg></span>
+              4.6 <span class="reviews">(112)</span>
+            </div>
+            <div class="dcard__specs">
+              <span class="chip">기아</span><span class="chip">Mazda</span><span class="chip">세단</span>
+            </div>
+            <div class="dcard__stats">
+              <div class="dcard__stat"><label>등록 매물</label><strong>28<span class="unit">대</span></strong></div>
+              <div class="dcard__stat"><label>평균 응답</label><strong>8<span class="unit">분</span></strong></div>
+            </div>
+            <div class="dcard__actions">
+              <button class="btn btn--s btn--outline-ink"><svg class="ic"><use href="#i-zalo"/></svg> Zalo</button>
+              <button class="btn btn--s">상세보기 <svg class="ic"><use href="#i-arrow-right"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dealer card 8 -->
+        <article class="dcard">
+          <div class="dcard__cover dcard__cover--teal">
+            <span class="badge badge--new dcard__badge">신규</span>
+            <button class="dcard__heart" aria-label="찜"><svg class="ic" style="width:14px;height:14px"><use href="#i-heart"/></svg></button>
+            <div class="dcard__avatar av-t">G</div>
+          </div>
+          <div class="dcard__body">
+            <div>
+              <div class="dcard__name">Green Auto Trade</div>
+              <div class="dcard__region"><svg class="ic" style="width:12px;height:12px"><use href="#i-pin"/></svg> 하노이 까우자이 · Trần Duy Hưng</div>
+            </div>
+            <div class="dcard__rating">
+              <span class="stars"><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg></span>
+              4.8 <span class="reviews">(42)</span>
+            </div>
+            <div class="dcard__specs">
+              <span class="chip">VinFast</span><span class="chip">하이브리드</span>
+            </div>
+            <div class="dcard__stats">
+              <div class="dcard__stat"><label>등록 매물</label><strong>18<span class="unit">대</span></strong></div>
+              <div class="dcard__stat"><label>평균 응답</label><strong>3<span class="unit">분</span></strong></div>
+            </div>
+            <div class="dcard__actions">
+              <button class="btn btn--s btn--outline-ink"><svg class="ic"><use href="#i-zalo"/></svg> Zalo</button>
+              <button class="btn btn--s">상세보기 <svg class="ic"><use href="#i-arrow-right"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dealer card 9 -->
+        <article class="dcard">
+          <div class="dcard__cover">
+            <span class="badge badge--brand dcard__badge">VORA 인증</span>
+            <button class="dcard__heart" aria-label="찜"><svg class="ic" style="width:14px;height:14px"><use href="#i-heart"/></svg></button>
+            <div class="dcard__avatar av-k">P</div>
+          </div>
+          <div class="dcard__body">
+            <div>
+              <div class="dcard__name">Phạm Auto Hanoi <svg class="ic ic-verified"><use href="#i-verified"/></svg></div>
+              <div class="dcard__region"><svg class="ic" style="width:12px;height:12px"><use href="#i-pin"/></svg> 하노이 호아키엠 · Hàng Bài</div>
+            </div>
+            <div class="dcard__rating">
+              <span class="stars"><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg><svg class="ic" style="width:13px;height:13px"><use href="#i-star"/></svg></span>
+              4.9 <span class="reviews">(348)</span>
+            </div>
+            <div class="dcard__specs">
+              <span class="chip">현대</span><span class="chip">기아</span><span class="chip">SUV</span><span class="chip">세단</span>
+            </div>
+            <div class="dcard__stats">
+              <div class="dcard__stat"><label>등록 매물</label><strong>62<span class="unit">대</span></strong></div>
+              <div class="dcard__stat"><label>평균 응답</label><strong>2<span class="unit">분</span></strong></div>
+            </div>
+            <div class="dcard__actions">
+              <button class="btn btn--s btn--outline-ink"><svg class="ic"><use href="#i-zalo"/></svg> Zalo</button>
+              <button class="btn btn--s">상세보기 <svg class="ic"><use href="#i-arrow-right"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="pager">
+        <button disabled>‹</button>
+        <button class="is-on">1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>›</button>
+      </div>
+
+    </main>
+
+  </div>
+</div>
+
+</body>
+</html>
